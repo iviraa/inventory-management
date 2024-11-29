@@ -1,4 +1,3 @@
-
 import React, { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
 import { v4 } from "uuid";
@@ -17,7 +16,7 @@ type CreateProductModalProps = {
   onCreate: (formData: ProductFormData) => void;
 };
 
-const createProductModal = ({
+const CreateProductModal = ({
   isOpen,
   onClose,
   onCreate,
@@ -131,4 +130,4 @@ const createProductModal = ({
   );
 };
 
-export default createProductModal;
+export default CreateProductModal;

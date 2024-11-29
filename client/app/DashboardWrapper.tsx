@@ -18,7 +18,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, []);
+  }, [isDarkMode]);
 
   return (
     <div

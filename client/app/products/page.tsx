@@ -1,18 +1,18 @@
 "use client";
-import { Product, useCreateProductMutation, useGetProductsQuery } from "@/state/api";
+import { useCreateProductMutation, useGetProductsQuery } from "@/state/api";
 import React from "react";
 import { useState } from "react";
 import Header from "../(components)/Header";
 import { PlusCircleIcon, SearchIcon } from "lucide-react";
 import Rating from "../(components)/Rating";
-import CreateProductModal from "./createProduct";
+import CreateProductModal from "./CreateProduct";
 
 type ProductFormData = {
-    name: string;
-    price: number;
-    stockQuantity: number;
-    rating: number;
-}
+  name: string;
+  price: number;
+  stockQuantity: number;
+  rating: number;
+};
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isModalOpen, setModalOpen] = useState(false);
@@ -27,7 +27,7 @@ const Products = () => {
 
   const handleCreateModal = async (productData: ProductFormData) => {
     await createProduct(productData);
-  }
+  };
 
   if (isError || !products) {
     return (
@@ -40,8 +40,6 @@ const Products = () => {
   if (isLoading) {
     return <div className="m-5 py-4">Loading...</div>;
   }
-
- 
 
   return (
     <div className="mx-auto pb-5 w-full">
