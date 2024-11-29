@@ -3,6 +3,7 @@
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { SetisDarkMode, SetisSidebarCollapsed } from "@/state";
 import { Bell, Menu, Moon, Search, Settings, Sun } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -69,7 +70,13 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center justify-between gap-2 cursor-pointer">
-            <div className="  w-9 h-9 rounded-full bg-gray-300"></div>
+            <Image
+              src="https://s3-inventory-management-ivira.s3.us-east-2.amazonaws.com/f9ee39551ef105541d1aecb8bc666844.jpg"
+              alt="profile"
+              width={50}
+              height={50}
+              className="object-cover h-full rounded-full"
+            />
             <span className="font-semibold">Chetan</span>
           </div>
         </div>
