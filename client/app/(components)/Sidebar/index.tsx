@@ -4,13 +4,11 @@ import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { SetisSidebarCollapsed } from "@/state";
 import {
   Archive,
-  Circle,
   CircleDollarSign,
   Clipboard,
   Layout,
   LucideIcon,
   Menu,
-  Settings,
   SlidersHorizontal,
   User,
 } from "lucide-react";

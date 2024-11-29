@@ -1,4 +1,4 @@
-"use client";
+
 import React, { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
 import { v4 } from "uuid";
